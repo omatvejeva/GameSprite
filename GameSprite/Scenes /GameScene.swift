@@ -11,11 +11,29 @@ class GameScene : SKScene, SKPhysicsContactDelegate
 {
     private var colorMask : Int = 0b0000
     
+    private let scoreNode : SKLabelNode = SKLabelNode(fontNamed: "Copperplate-Bold")
+    
+    private var score : Int = -0
+    {
+        didSet
+        {
+            scoreNode.text = "Current Score \(score)"
+        }
+    }
     
     override func didMove(to view: SKView) -> Void
     {
         physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         physicsWorld.contactDelegate = self
+        
+        scoreNode.zPosition = 2
+        scoreNode.position.x = 150
+        scoreNode.position.y = 480
+        
+        addChild(scoreNode)
+        score = 0
+        
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event : UIEvent?) -> Void
@@ -56,6 +74,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
     private func annihilate(deadNode: SKNode) -> Void
     {
         deadNode.removeFromParent()
+        score += 5 
     }
     
     private func collisionBetween(_ nodeOne : SKNode, and nodeTwo : SKNode) -> Void
@@ -75,6 +94,5 @@ class GameScene : SKScene, SKPhysicsContactDelegate
         collisionBetween(first, and: second)
     }
     
-    
-    
+
 }
