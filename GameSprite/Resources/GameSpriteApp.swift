@@ -11,7 +11,7 @@ import SwiftUI
 struct GameSpriteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DropGameView()
         }
     }
 }
