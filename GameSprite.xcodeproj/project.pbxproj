@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0C050DE62922C3AA009AF4EF /* SparkParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0C050DE42922C3AA009AF4EF /* SparkParticle.sks */; };
 		0C050DE72922C3AA009AF4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C050DE52922C3AA009AF4EF /* Assets.xcassets */; };
+		0C050DED2922CA7B009AF4EF /* Go.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C050DE92922CA7A009AF4EF /* Go.mp3 */; };
+		0C050DEE2922CA7B009AF4EF /* drop bass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C050DEA2922CA7A009AF4EF /* drop bass.wav */; };
+		0C050DEF2922CA7B009AF4EF /* torchwood update.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0C050DEB2922CA7A009AF4EF /* torchwood update.wav */; };
+		0C050DF02922CA7B009AF4EF /* Yameen Yasar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C050DEC2922CA7A009AF4EF /* Yameen Yasar.mp3 */; };
+		0C050DF22922CDDB009AF4EF /* Never Gonna Give You Up Original.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C050DF12922CDDB009AF4EF /* Never Gonna Give You Up Original.mp3 */; };
+		0C050DF42922D45F009AF4EF /* EndGameSceen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C050DF32922D45F009AF4EF /* EndGameSceen.swift */; };
 		0C208F59291D7C62009DC537 /* GameSpriteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C208F58291D7C62009DC537 /* GameSpriteApp.swift */; };
 		0C208F5B291D7C62009DC537 /* DropGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C208F5A291D7C62009DC537 /* DropGameView.swift */; };
 		0C208F5D291D7C63009DC537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C208F5C291D7C63009DC537 /* Assets.xcassets */; };
@@ -39,6 +45,12 @@
 /* Begin PBXFileReference section */
 		0C050DE42922C3AA009AF4EF /* SparkParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkParticle.sks; sourceTree = "<group>"; };
 		0C050DE52922C3AA009AF4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C050DE92922CA7A009AF4EF /* Go.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Go.mp3; sourceTree = "<group>"; };
+		0C050DEA2922CA7A009AF4EF /* drop bass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drop bass.wav"; sourceTree = "<group>"; };
+		0C050DEB2922CA7A009AF4EF /* torchwood update.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "torchwood update.wav"; sourceTree = "<group>"; };
+		0C050DEC2922CA7A009AF4EF /* Yameen Yasar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yameen Yasar.mp3"; sourceTree = "<group>"; };
+		0C050DF12922CDDB009AF4EF /* Never Gonna Give You Up Original.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Never Gonna Give You Up Original.mp3"; sourceTree = "<group>"; };
+		0C050DF32922D45F009AF4EF /* EndGameSceen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameSceen.swift; sourceTree = "<group>"; };
 		0C208F55291D7C62009DC537 /* GameSprite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameSprite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C208F58291D7C62009DC537 /* GameSpriteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSpriteApp.swift; sourceTree = "<group>"; };
 		0C208F5A291D7C62009DC537 /* DropGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGameView.swift; sourceTree = "<group>"; };
@@ -84,6 +96,18 @@
 				0C050DE52922C3AA009AF4EF /* Assets.xcassets */,
 			);
 			path = Particles;
+			sourceTree = "<group>";
+		};
+		0C050DE82922CA59009AF4EF /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0C050DF12922CDDB009AF4EF /* Never Gonna Give You Up Original.mp3 */,
+				0C050DEA2922CA7A009AF4EF /* drop bass.wav */,
+				0C050DE92922CA7A009AF4EF /* Go.mp3 */,
+				0C050DEB2922CA7A009AF4EF /* torchwood update.wav */,
+				0C050DEC2922CA7A009AF4EF /* Yameen Yasar.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		0C208F4C291D7C62009DC537 = {
@@ -154,6 +178,7 @@
 		0C208F83291D7EE9009DC537 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0C050DE82922CA59009AF4EF /* Sounds */,
 				0C208F58291D7C62009DC537 /* GameSpriteApp.swift */,
 				0C208F5C291D7C63009DC537 /* Assets.xcassets */,
 			);
@@ -164,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				0C208F85291D7F7F009DC537 /* GameScene.swift */,
+				0C050DF32922D45F009AF4EF /* EndGameSceen.swift */,
 			);
 			path = "Scenes ";
 			sourceTree = "<group>";
@@ -272,10 +298,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C050DEF2922CA7B009AF4EF /* torchwood update.wav in Resources */,
+				0C050DF22922CDDB009AF4EF /* Never Gonna Give You Up Original.mp3 in Resources */,
+				0C050DED2922CA7B009AF4EF /* Go.mp3 in Resources */,
 				0C208F60291D7C63009DC537 /* Preview Assets.xcassets in Resources */,
 				0C050DE62922C3AA009AF4EF /* SparkParticle.sks in Resources */,
 				0C050DE72922C3AA009AF4EF /* Assets.xcassets in Resources */,
+				0C050DF02922CA7B009AF4EF /* Yameen Yasar.mp3 in Resources */,
 				0C208F5D291D7C63009DC537 /* Assets.xcassets in Resources */,
+				0C050DEE2922CA7B009AF4EF /* drop bass.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C050DF42922D45F009AF4EF /* EndGameSceen.swift in Sources */,
 				0C208F86291D7F7F009DC537 /* GameScene.swift in Sources */,
 				0C208F5B291D7C62009DC537 /* DropGameView.swift in Sources */,
 				0C208F59291D7C62009DC537 /* GameSpriteApp.swift in Sources */,
