@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C050DE62922C3AA009AF4EF /* SparkParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0C050DE42922C3AA009AF4EF /* SparkParticle.sks */; };
+		0C050DE72922C3AA009AF4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C050DE52922C3AA009AF4EF /* Assets.xcassets */; };
 		0C208F59291D7C62009DC537 /* GameSpriteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C208F58291D7C62009DC537 /* GameSpriteApp.swift */; };
 		0C208F5B291D7C62009DC537 /* DropGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C208F5A291D7C62009DC537 /* DropGameView.swift */; };
 		0C208F5D291D7C63009DC537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C208F5C291D7C63009DC537 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C050DE42922C3AA009AF4EF /* SparkParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkParticle.sks; sourceTree = "<group>"; };
+		0C050DE52922C3AA009AF4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C208F55291D7C62009DC537 /* GameSprite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameSprite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C208F58291D7C62009DC537 /* GameSpriteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSpriteApp.swift; sourceTree = "<group>"; };
 		0C208F5A291D7C62009DC537 /* DropGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropGameView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C050DE32922C339009AF4EF /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				0C050DE42922C3AA009AF4EF /* SparkParticle.sks */,
+				0C050DE52922C3AA009AF4EF /* Assets.xcassets */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
 		0C208F4C291D7C62009DC537 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +109,7 @@
 		0C208F57291D7C62009DC537 /* GameSprite */ = {
 			isa = PBXGroup;
 			children = (
+				0C050DE32922C339009AF4EF /* Particles */,
 				0C208F84291D7F5F009DC537 /* Scenes  */,
 				0C208F83291D7EE9009DC537 /* Resources */,
 				0C208F82291D7EB4009DC537 /* ViewContoller */,
@@ -259,6 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C208F60291D7C63009DC537 /* Preview Assets.xcassets in Resources */,
+				0C050DE62922C3AA009AF4EF /* SparkParticle.sks in Resources */,
+				0C050DE72922C3AA009AF4EF /* Assets.xcassets in Resources */,
 				0C208F5D291D7C63009DC537 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
