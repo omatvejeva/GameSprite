@@ -25,12 +25,13 @@ struct DropGameView: View
     
     var body: some View
     {
+      
         VStack
         {
            
             Text("Game? ")
             SpriteView(scene: simpleScene)
-                .frame(width: width, height: height)
+                .frame(maxWidth: UIDevice.current.userInterfaceIdiom != .pad ? width : .infinity, maxHeight: UIDevice.current.userInterfaceIdiom != .pad ? height : .infinity)
         }
         .padding()
     }

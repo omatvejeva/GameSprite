@@ -11,7 +11,7 @@ class GameScene : SKScene, SKPhysicsContactDelegate
 {
     private var colorMask : Int = 0b0000
     
-    private let scoreNode : SKLabelNode = SKLabelNode(fontNamed: "Copperplate-Bold")
+    private let scoreNode : SKLabelNode = SKLabelNode(fontNamed: "Didot")
     
     private var score : Int = -0
     {
